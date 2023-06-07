@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="theme-color" content="#f58"
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="head">
+        <div class="gornji">
+            <div class="wrapper">
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+        </div>
+        <div class="donji">
+            <div class="wrapper">
+                <p>LOGO</p>
+                <nav>
+                    <ul>
+                        <li><a href="#">neki link</a></li>
+                        <li><a href="#">neki link</a></li>
+                        <li><a href="#">neki link</a></li>
+                        <li><a href="#">neki link</a></li>
+                    </ul>
+                    <div id="respmenu">Navigacija</div>
+                </nav>
+            </div>
+        </div>    
+    </header>
+    <div class="central">
+        <div class="wrapper">
+            <main class="main">
+                <div class="hero">
+                    <img src="https://via.placeholder.com/840x420" alt="#">
+                </div>    
+                <section class="products">
+                    <article class="product">
+                        <img src="https://via.placeholder.com/400x200" alt="#">
+                        <h1>Lorem, ipsum</h1>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor impedit, vel rem assumenda obcaecati, velit minus incidunt vero aperiam doloribus optio placeat dignissimos maxime omnis aspernatur, quis eius quod commodi?</p>
+                        </article>
+                    <article class="product">
+                        <img src="https://via.placeholder.com/400x200" alt="#">
+                        <h1>Lorem, ipsum</h1>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor impedit, vel rem assumenda obcaecati, velit minus incidunt vero aperiam doloribus optio placeat dignissimos maxime omnis aspernatur, quis eius quod commodi?</p>
+                    </article>
+                </section>
+            </main>
+            <aside class="sidebar">
+                <h3>Lorem, ipsum dolor</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim amet atque quaerat porro maiores labore dicta nisi necessitatibus id velit, totam neque a optio! Illum temporibus voluptas ea at magnam?</p>
+            </aside>
+        </div>  
+    </div>
+    <footer class="footer">      
+            <div class="footerPrvi">
+                <div class="wrapper">
+                    <p class="logo">LOGO</p>
+                    <article class="articleFooter">
+                        <h3>Lorem, ipsum.</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id sapiente dolore enim eaque quo repellat.</p>
+                    </article>
+                </div>
+            </div>
+            <div class="footerDrugi">
+                <div class="wrapper">
+                    <p>Copyright text</p>
+                </div>    
+            </div> 
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        jQuery(document).ready( function() {
+            jQuery("#respmenu").click( function(){
+                jQuery(".donji nav ul").slideToggle()
+            });
+        });
+    </script>
+</body>
+</html>

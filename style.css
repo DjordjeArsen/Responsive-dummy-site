@@ -1,0 +1,162 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.gornji{
+    background-color: rgb(4, 4, 65);
+    color: azure;
+    padding: 3px 0;
+}
+
+
+
+.wrapper {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header p {
+    margin: 0;
+}
+
+.donji {
+    background-color: rgb(36, 36, 187);
+    padding: 3px 0;
+    text-align: center;
+}
+
+.donji p {
+    padding: 10px 0;
+    
+}
+
+.donji nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: aliceblue;
+    padding: 10px;
+    display: block;
+}
+#respmenu {
+    background-color: black;
+    color: white;
+    padding: 10px 0;
+}
+.central {
+    margin: 20px 0;
+}
+.main {
+    margin-bottom: 20px;
+}
+.sidebar{
+    background-color: #aaa;
+    padding: 15px 10px;
+}
+.hero {
+    margin-bottom: 20px;
+}
+
+.footerPrvi {
+    background-color: rgb(141, 140, 140);
+    color: rgb(59, 59, 226);
+    text-align: center;
+    padding: 10px 0;
+}
+.footerDrugi {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+    
+    nav ul {
+        display: flex;
+        justify-content: center;
+    }
+    .products {
+        display: flex;
+        justify-content: space-between;
+    }
+    .product {
+        flex-basis: 47%;
+    }
+    #respmenu {
+        display: none;
+    }   
+}
+
+@media screen and (min-width:1024px) {
+    .donji .wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    nav ul {
+        display: flex;
+
+    }
+    .products {
+        display: flex;
+        justify-content: space-between;
+    }
+    .product {
+        flex-basis: 47%;
+    }
+    .central .wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    .footerPrvi .wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logo, .articleFooter {
+        flex-basis: 45%;
+
+    }
+    #respmenu {
+        display: none;
+    }  
+}
+
+@media screen and (min-width:1024px) and (max-width: 1279px) {
+    .wrapper {
+        width: 960px;
+
+    }
+    .main {
+        flex-basis: 640px;
+    }
+    .sidebar {
+        flex-basis: 280px;
+    }
+}
+
+@media screen and (min-width:1280px){
+    .wrapper {
+        width: 1200px;
+    }
+    .main {
+        flex-basis: 840px;
+    }
+    .sidebar {
+        flex-basis: 320px;
+    }   
+}
+
